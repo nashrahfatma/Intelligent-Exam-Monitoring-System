@@ -1,43 +1,37 @@
 # Intelligent Vision-Based Examination Monitoring System (IVB-EMS)
 
-## Overview
+## Project Overview
 
-Intelligent Vision-Based Examination Monitoring System (IVB-EMS) is an AI-powered online proctoring solution designed to monitor candidates during online examinations and identify suspicious activities in real time.
-
-The system combines computer vision, object detection, facial landmark tracking, and automated evidence collection to support examination integrity.
+Intelligent Vision-Based Examination Monitoring System (IVB-EMS) is an AI-powered online proctoring solution designed to monitor candidates during online examinations and identify suspicious activities in real time. The system uses computer vision techniques to detect prohibited objects, monitor candidate attention, generate alerts, and capture evidence of violations.
 
 ---
 
 ## Features
-
-### Candidate Verification
-- Validates student information before starting the examination.
-- Verifies roll code format through a secure registration interface.
 
 ### Object Detection
 - Uses YOLOv8 to detect prohibited objects such as:
   - Mobile Phones
   - Books
   - Laptops
-- Detects multiple persons in the examination frame.
+- Detects multiple-person presence during examinations.
 
-### Head Movement & Attention Monitoring
+### Behavioral Monitoring
 - Uses MediaPipe Face Mesh for facial landmark detection.
-- Tracks head position and screen attention.
-- Identifies:
+- Monitors head movement and screen attention.
+- Identifies suspicious behaviors such as:
   - Looking away from the screen
   - Head-down posture
 
 ### Real-Time Alerts
-- Displays warning messages when suspicious activity is detected.
-- Generates audible alerts using system notifications.
+- Generates visual warning messages for detected violations.
+- Triggers audible alerts to notify candidates.
 
 ### Automated Evidence Collection
-- Captures screenshots of detected violations.
-- Saves time-stamped evidence for review and audit purposes.
+- Captures time-stamped screenshots of suspicious activities.
+- Stores evidence for administrative review and auditing.
 
-### User Interface
-- Built with Tkinter for examination registration and session management.
+### Examination Registration Interface
+- Provides a Tkinter-based GUI for candidate verification and exam session initiation.
 
 ---
 
@@ -46,40 +40,40 @@ The system combines computer vision, object detection, facial landmark tracking,
 ### Programming Language
 - Python
 
-### Libraries
+### Libraries & Frameworks
 - OpenCV
 - YOLOv8 (Ultralytics)
 - MediaPipe
 - Tkinter
 
-### Functional Modules
+### Concepts Used
 - Computer Vision
 - Object Detection
-- Face Landmark Tracking
+- Facial Landmark Tracking
+- Real-Time Monitoring
 - GUI Development
 
 ---
 
 ## Workflow
 
-1. Student enters name and roll code.
+1. Candidate enters registration details.
 2. System validates examination credentials.
-3. Webcam monitoring starts.
+3. Webcam monitoring begins.
 4. YOLOv8 detects prohibited objects and additional persons.
 5. MediaPipe tracks facial landmarks and head movement.
-6. Suspicious activities trigger warnings.
+6. Suspicious activities trigger alerts.
 7. Evidence is automatically captured and stored.
-8. Examination session continues under monitoring.
+8. Examination continues under monitoring.
 
 ---
 
-## Future Improvements
+## Future Enhancements
 
-- Database integration for candidate records
 - Cloud-based evidence storage
-- Admin dashboard for review
+- Admin dashboard for monitoring
 - Advanced gaze tracking
-- Examination analytics reports
+- Examination analytics and reporting
 
 ---
 
